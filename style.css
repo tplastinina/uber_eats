@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 80px; /* Учитываем высоту фиксированной панели */
+    
+.row > .col-12, .row > .col-sm-6, .row > .col-lg-4 {
+    margin-bottom: 20px; /* Отступ между блоками */
+}
+}
+/*_____________________________Шапка__________________________*/
+.container-fluid.custom-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.navbar {
+    background-color: white;
+    height: 80px; /* Высота шапки */
+  }
+
+.navbar-brand img {
+  height: 60px; /* Высота логотипа */
+  margin-left: 95px;
+}
+
+/*_____________________________Поиск__________________________*/
+.search-input {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+}
+.search-container {
+    margin: 20px 0;
+}
+.search-input {
+    color: #ccc;
+    width: 100%;
+    padding: 10px 15px; /* Отступы, чтобы иконка не закрывала текст */
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0; /* Закругленные углы */
+    box-shadow: none;/* Легкая тень */
+}
+
+
+/*_____________________________Карточки товаров__________________________*/
+.image_block {
+    padding: 5px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/*__Анимация при наведении__*/
+.image_block:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Усиленная тень */
+    transform: translateY(-5px); /* Поднимаем блок вверх */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Обрезает изображение, если оно слишком большое */
+}
+.caption-title {
+    font-size: 18px;
+    color: black;
+    margin: 10px 0 5px;
+}
+
+.cartion-price {
+    font-size: 12px;
+    color: #d0c3c3;
+    margin: 10px 0;
+}
+
+.caption-description {
+    font-size: 12px;
+    color: #aba8a8;
+    margin: 10px 0;
+}
+/* __________Управляем отступами по бокам____________________________ */
+@media (min-width: 1200px) {
+    .container-fluid {
+        padding-left: 240px;
+        padding-right: 240px;
+    }
+}
+@media (max-width: 1199.98px) and (min-width: 992px) {
+    .container-fluid {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+}
+
+/* Управляем отступами на малых экранах (без отступов) */
+@media (max-width: 991.98px) and (min-width: 768px) {
+    .container-fluid {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 767.98px) and (min-width: 576px) {
+    .container-fluid {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 575.98px) and (min-width: 0px) {
+    .container-fluid {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+/* __________Низ____________________________ */
+.footer {
+    background-color: #262626;
+    
+}
+.footer_column {
+    width: 32%;
+    
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.container {
+    margin: 0 auto;
+    
+}
+
+.container_footer img {
+    padding: 56px 0 40px 0;
+    
+}
+
+.footer_main {
+    padding: 32px 0 48px 0;
+    border-top: 1px solid rdba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.footer_downland {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.footer_downland img{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.footer_social {
+   display: flex;
+   flex-flow: row nowrap;
+
+}
+
+.footer_tag {
+    
+    font-size: 16px;
+}
+
+.language {
+ 
+    color: #fff;
+    background-color: #3b3b3b;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 12px 128px 12px 48px;
+    border: none;
+    background-image: url(img/world.svg);
+    background-size: 25px 25px;
+    background-repeat: no-repeat; 
+    background-position: 8px;
+    appearance: none;
+}
+
+.green {
+    color: #49A144;
+}
+
+.footer_tag {
+    padding: 11px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer_link a, .footer_tag {
+    color: #fff;
+}
+.footer_link {
+    padding: 11px 0;
+    font-size: 13px;
+    color: #fff;
+}
+
+.footer_under {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.arrow_up {
+    position: fixed;
+    bottom: 24px;
+    right: 16px;
+}
+
+/*________________Ссылки__________________*/
+a {
+    text-decoration: none;
+}
+
+/*_____________________________________________________________Страница ресторана_____________________________________________________________*/
+
+.restaurant-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-image: url('img/pysch.png'); /* Установите фоновое изображение здесь */
+    background-size: cover; /* Изображение растягивается, чтобы покрыть всю область */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Не повторять изображение */
+    height: 400px;
+}
+
+
+.restaurant-info {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    background: white;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.restaurant-info h2 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+    padding-bottom: 40px;
+}
+
+
+
+
+.restaurant-info p {
+    display: flex;
+    align-items: center;
+    color: #666;
+    margin: 5px 0;
+}
+
+.delivery-time {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    margin-left: 80px;
+}
+
+@media (max-width: 575.98px) and (min-width: 0px) {
+    .restaurant-info {
+        position: relative; /* Убираем absolute позиционирование */
+        top: 0; 
+        left: 0; 
+        margin-top: -50px; /* Перекрытие снизу изображения */
+        padding: 15px;
+        width: 700px;
+    }
+}
+
+/*________________Категории__________________*/
+.category-panel{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    justify-content: left;
+    background-color: white;
+    border-top: 1px solid rdba(85, 84, 84, 0.4);
+    border-bottom: 1px solid rgba(85, 84, 84, 0.4);
+
+
+}
+
+.category-btn {
+    padding-right: 20px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.category-btn:hover,
+.category-btn.acctive {
+    background-color: white;
+    color: #49A144;
+}
+/*________________Блюда__________________*/
+
+
+
